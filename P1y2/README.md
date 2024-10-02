@@ -9,6 +9,6 @@
   -¿De qué sire el bucle "if" en el que la condición es i % 2 == 0?<br>
   -*El bucle if i % 2 == 0 se utiliza para verificar si el número i es par. Si lo es, la instrucción continue hace que se salte esa iteración, omitiendo la impresión de multiplicaciones para números pares.*<br>
   **Pregunta 3:** <br>  
-  -<br>
-  -**
+  -¿Qué hace la llamada a la función "tabla_multiplicar( )"? <br>
+  -*La llamada a la función tabla_multiplicar() ejecuta el código dentro de la función, generando e imprimiendo las tablas de multiplicar del 1 al 5 con las condiciones especificadas (omitir números pares, detener si el producto supera 20).*<br>
 
