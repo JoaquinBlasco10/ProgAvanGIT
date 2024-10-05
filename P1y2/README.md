@@ -49,6 +49,6 @@
 
  # Ejercicio 6:<br>
 **Pregunta 1: <br>
--<br>**
-> **<br><br>
+-¿Cómo hace el contador para enumerar cada una de las cadenas para luego después clasificarlas?<br>**
+> *El contador utiliza la función `enumerate()` para asignar un número a cada cadena en la lista, comenzando desde 1. Esto permite que las cadenas se presenten de forma ordenada cuando se imprimen, clasificándolas por su posición en la lista.*<br><br>
 
