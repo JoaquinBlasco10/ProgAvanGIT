@@ -31,5 +31,24 @@
 
 **Pregunta 2: <br>
 -¿Por qué el "for" que está dentro del "if n <= 1" coge esos parámetros?<br>**
-> *El for dentro de is_prime(n) no se ejecuta si \( n \) es menor o igual a 1 porque la función devuelve `False` en esa condición, indicando que \( n \) no puede ser primo. El bucle solo se ejecuta si \( n \) es mayor que 1.*<br><br>
+> *El for dentro de is_prime(n) no se ejecuta si \(n\) es menor o igual a 1 porque la función devuelve "False" en esa condición, indicando que \(n\) no puede ser primo. El bucle solo se ejecuta si \(n\) es mayor que 1.*<br><br>
+
+ # Ejercicio 4:<br>
+**Pregunta 1: <br>
+-¿Cómo comprueba "len(numeros) == len(set(numeros))" que no se repite ningún numero de la lista?<br>**
+> *La expresión len(numeros) == len(set(numeros)) comprueba si todos los números son únicos al comparar la longitud de la lista original con la de un conjunto, que elimina duplicados. Si las longitudes son iguales, no hay números repetidos.*<br><br>
+
+ # Ejercicio 5:<br>
+**Pregunta 1: <br>
+-¿Cómo funciona el bucle "if" para eliminar tareas de la lista?<br>**
+> *El bucle if en la función remove_task(task) verifica si la tarea a eliminar está en la lista. Si la tarea está presente, la elimina con el método remove(). Si no está, muestra un mensaje indicando que no se encontró la tarea.*<br><br>
+
+**Pregunta 2: <br>
+-¿Con qué finalidad se define "list_tasks( )" en el código?<br>**
+> *La función list_tasks() se define para mostrar todas las tareas pendientes y enumerarlas, o informar si no hay tareas en la lista.*<br><br>
+
+ # Ejercicio 6:<br>
+**Pregunta 1: <br>
+-<br>**
+> **<br><br>
 
