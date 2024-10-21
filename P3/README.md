@@ -1,5 +1,5 @@
-1. ¿Qué hace la clase Time en el programa?
-    La clase Time representa una hora con formato AM/PM o de 24 horas. Permite almacenar y validar una hora, y también convertir una cadena de texto con formato de hora en un objeto Time.
+1. **¿Qué hace la clase Time en el programa?**<br>
+    > *La clase Time representa una hora con formato AM/PM o de 24 horas. Permite almacenar y validar una hora, y también convertir una cadena de texto con formato de hora en un objeto Time.*<br>
 
 2. ¿Cómo se validan los valores de hora, minutos y segundos?
     Los valores de hora, minutos y segundos se validan dependiendo del formato de la hora. Para el formato de 24 horas, las horas deben estar entre 0 y 23; para los formatos AM/PM, las horas deben estar entre 1 y 12. Los minutos y segundos siempre deben estar entre 0 y 59.
