@@ -1,5 +1,3 @@
-Aquí tienes las preguntas y respuestas sin subrayado en las palabras:
-
 **1. ¿Cuál es el propósito de la clase CMatFloat en este programa?**  
 > *La clase CMatFloat representa matrices 1D y 2D utilizando la librería numpy. Permite la creación, modificación y realización de operaciones básicas (como suma y resta) entre matrices.*  
 
