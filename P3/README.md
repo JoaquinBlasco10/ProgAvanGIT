@@ -18,6 +18,12 @@
 
 7. **¿Qué pasa si el usuario introduce una hora inválida?**<br>
     > *Si el usuario introduce una hora inválida (por ejemplo, con valores fuera de los rangos permitidos), el programa lo detecta y muestra un mensaje de error, sin cambiar la hora almacenada en el objeto.*<br>
+<<<<<<< HEAD
+=======
+
+8. **¿Cómo se asegura que el formato de hora esté en mayúsculas aunque el usuario lo introduzca en minúsculas?**<br>
+    > *El formato se convierte automáticamente a mayúsculas dentro del método __assign_format() para evitar problemas de capitalización y asegurar que se compare correctamente con los formatos válidos.*<br>
+>>>>>>> 4dcad091ad7e3bc3db17ee9fe4d6b1cd23b9f44b
 
 8. **¿Cómo se asegura que el formato de hora esté en mayúsculas aunque el usuario lo introduzca en minúsculas?**<br>
     > *El formato se convierte automáticamente a mayúsculas dentro del método __assign_format() para evitar problemas de capitalización y asegurar que se compare correctamente con los formatos válidos.*<br>
