@@ -14,18 +14,18 @@
 > *El uso de *args permite que las funciones puedan aceptar cualquier cantidad de argumentos posicionales. Esto es especialmente útil en operaciones como suma o multiplicación, donde puede haber más de dos operandos. Así, math_operation(add, 1, 2, 3, 4, 5) es válido sin tener que definir una función con un número fijo de parámetros. Mejora la reutilización y adaptabilidad del código.*<br>
 
 **Pregunta 4:** <br>
-**¿Por qué en la clase Empleado se usa super().__init__() en el constructor?**
+**¿Para qué se utiliza el decorador @property en las clases Book y User?**
 
-> *Porque Empleado hereda de Ficha, y super().__init__() permite inicializar los atributos heredados (nombre, edad, nacio) sin tener que reescribir ese código. Así se garantiza una correcta inicialización y se evita duplicación.*<br>
+> *Se usa para permitir el acceso controlado a los atributos privados como si fueran públicos. Así se mantiene el encapsulamiento sin necesidad de usar métodos get_ o set_ explícitos, facilitando la lectura del código y permitiendo incluir validaciones futuras si fuera necesario.*<br>
 
 
 **Pregunta 5:** <br>
-**¿Qué ventaja ofrece usar @property para los atributos como nombre o dni?**
+**¿Qué función cumple la clase Library y cómo gestiona los libros?**
 
-> *Permite acceder a los atributos como si fueran públicos (ej. persona.nombre) pero manteniendo el encapsulamiento. Si más adelante se quiere modificar el comportamiento del acceso (por ejemplo, añadir validaciones), se puede hacer sin cambiar el resto del código.*<br>
+> *La clase Library centraliza toda la gestión de libros: puede añadir, eliminar, prestar, devolver y buscar libros. Internamente, almacena los libros en un diccionario con la clave como ISBN, lo que permite acceder y modificar libros de forma rápida y eficiente.*<br>
 
 
 **Pregunta 6:** <br>
-**¿Qué sucede si se llama a registro.visualizar_registro() y hay tanto empleados como clientes?**
+**¿Cómo se generan los IDs únicos para usuarios y libros y por qué es importante?**
 
-> *El método recorre la lista de personas y llama a visualizar() en cada una. Gracias al polimorfismo, se ejecuta el método específico de la subclase (Empleado o Cliente), mostrando los datos de forma adecuada según el tipo real de cada objeto.*<br>
+> *Se utiliza la función uuid4() del módulo uuid, recortando el resultado a los primeros 8 caracteres para crear un ID corto pero único. Esto evita colisiones y permite identificar de forma segura a cada libro y usuario dentro del sistema sin tener que depender de entradas manuales.*<br>
