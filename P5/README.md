@@ -9,7 +9,7 @@
 > *Las funciones lambda permiten definir de forma rápida y concisa operaciones simples sin tener que escribir funciones completas con def. Además, como son objetos de primera clase en Python, se pueden pasar como argumentos a otras funciones (como math_operation) para aplicarlas dinámicamente, lo cual favorece un diseño más flexible y compacto.*<br>
 
 **Pregunta 3:** <br>
-**¿Qué ventajas aporta utilizar *args en la definición de math_operation y en algunas funciones lambda como add o multiply?**
+**¿Qué ventajas aporta utilizar args en la definición de math_operation y en algunas funciones lambda como add o multiply?**
 
 > *El uso de *args permite que las funciones puedan aceptar cualquier cantidad de argumentos posicionales. Esto es especialmente útil en operaciones como suma o multiplicación, donde puede haber más de dos operandos. Así, math_operation(add, 1, 2, 3, 4, 5) es válido sin tener que definir una función con un número fijo de parámetros. Mejora la reutilización y adaptabilidad del código.*<br>
 
