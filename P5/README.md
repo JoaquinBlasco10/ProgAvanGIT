@@ -1,17 +1,17 @@
 **Pregunta 1:** <br>
-**¿Cuál es el propósito del decorador operation_logger en el programa?**
+**¿Cómo se asegura el decorador operation_logger de que se registre correctamente tanto un resultado como un posible error en la operación?**
 
-> *El decorador operation_logger se utiliza para registrar (loggear) el nombre de la operación ejecutada, los argumentos de entrada y el resultado. Si ocurre un error, también lo captura y lo muestra. Esto permite depurar o auditar fácilmente qué operaciones se realizan sin modificar la lógica principal de la función.*<br>
+> *El decorador envuelve la función math_operation y utiliza un bloque try-except. En el try, ejecuta la operación y registra el nombre de la función, los argumentos y el resultado. Si ocurre una excepción (como una división por cero), el except la captura y muestra un mensaje de error sin detener el programa. De este modo, se mantiene el control del flujo incluso ante entradas inválidas..*<br>
 
 **Pregunta 2:** <br>
-**¿Por qué se utiliza *args en math_operation y en las funciones lambda?**
+**¿Por qué es útil usar funciones lambda para operaciones como suma, resta, multiplicación y división en este contexto?**
 
-> *Se usa *args para permitir que las operaciones acepten un número variable de argumentos. Esto es útil, por ejemplo, en la suma o la multiplicación, donde se pueden procesar 2 o más números sin definir una cantidad fija de parámetros.*<br>
+> *Las funciones lambda permiten definir de forma rápida y concisa operaciones simples sin tener que escribir funciones completas con def. Además, como son objetos de primera clase en Python, se pueden pasar como argumentos a otras funciones (como math_operation) para aplicarlas dinámicamente, lo cual favorece un diseño más flexible y compacto.*<br>
 
 **Pregunta 3:** <br>
-**¿Cómo se maneja el error de división por cero en la función divide y por qué es importante?**
+**¿Qué ventajas aporta utilizar *args en la definición de math_operation y en algunas funciones lambda como add o multiply?**
 
-> *La función divide lanza explícitamente un ZeroDivisionError si el divisor es cero. Este error es capturado por el decorador operation_logger, que imprime un mensaje de error en lugar de permitir que el programa se detenga. Esto es crucial para asegurar que el sistema sea robusto y no se bloquee ante entradas inválidas.*<br>
+> *El uso de *args permite que las funciones puedan aceptar cualquier cantidad de argumentos posicionales. Esto es especialmente útil en operaciones como suma o multiplicación, donde puede haber más de dos operandos. Así, math_operation(add, 1, 2, 3, 4, 5) es válido sin tener que definir una función con un número fijo de parámetros. Mejora la reutilización y adaptabilidad del código.*<br>
 
 **Pregunta 4:** <br>
 **¿Por qué en la clase Empleado se usa super().__init__() en el constructor?**
